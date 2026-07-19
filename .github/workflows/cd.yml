@@ -18,3 +18,9 @@ jobs:
 
       - name: Build prod
         run: ./scripts/buildprod.sh
+
+      - name: 'Set up Cloud SDK'
+        uses: 'google-github-actions/setup-gcloud@v3'
+
+      - name: 'Use gcloud CLI'
+        run: 'gcloud info'
